@@ -1,0 +1,4 @@
+string  brick
+bool    success
+---
+bool    ack

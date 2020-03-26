@@ -1,0 +1,4 @@
+bool    success   # The brick was ultimately correctly placed
+string  task_id   # Unique identifier of the task (brick)
+---
+bool    received  # Message was successfuly received and registered

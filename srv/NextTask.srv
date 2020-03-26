@@ -1,0 +1,6 @@
+
+---
+string  task_id     # Task (brick) unique identifier
+string  color       # Color of the brick
+float32 brick_pose  # Distance of the centre of the brick relative to the
+                    # beginning of the wall.

@@ -1,0 +1,24 @@
+config:
+  pattern_file_options:
+    num_segments: 4
+    num_layers: 2
+    num_bricks: 7
+  construction_options:
+    horizontal_spacing: 0.05
+    vertical_spacing: 0.02  # Used only for GUI drawing
+    brick_lengths:
+      R: 0.3
+      G: 0.6
+      B: 1.2
+      O: 1.8
+    brick_height: 0.2
+    brick_points:
+      R: 3
+      G: 4
+      B: 6
+      O: 10
+    build_directions:  # 1: left-to-right, 0: automatically decide, -1: right-to-left
+      segment_1: 0
+      segment_2: 0
+      segment_3: 0
+      segment_4: 1

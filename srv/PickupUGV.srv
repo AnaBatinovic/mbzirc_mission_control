@@ -1,0 +1,5 @@
+string[]  success
+string  failed
+---
+string[]  brick_ids
+float32[] brick_pos

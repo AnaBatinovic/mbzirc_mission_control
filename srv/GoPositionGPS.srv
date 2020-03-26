@@ -1,0 +1,4 @@
+geographic_msgs/GeoPose pose
+bool publish
+---
+bool success

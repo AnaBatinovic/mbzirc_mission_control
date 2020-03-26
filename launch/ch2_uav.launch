@@ -1,0 +1,12 @@
+<launch>
+
+  <arg name="mission_config_yaml" default="$(find mbzirc_mission_control)/params/mission_config_UAV.yaml"/>
+  <arg name="wall_pattern_file" default="$(find mbzirc_mission_control)/params/wall_UAV.txt"/>
+
+  <group ns="CH2">
+    <rosparam command="load" file="$(arg mission_config_yaml)"/>
+    <param name="wall_pattern" value="$(arg wall_pattern_file)" type="string"/>
+  </group>
+
+  <node name="coordinator" pkg="mbzirc_mission_control" type="UAV_wall_coordinator.py" output="screen"/>
+</launch>
